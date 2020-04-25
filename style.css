@@ -1,0 +1,386 @@
+:root {
+    --darkViolet: hsl(256, 26%, 20%);
+    --grayishBlue: hsl(216, 30%, 68%);
+    --veryDarkViolet: hsl(270, 9%, 17%);
+    --darkGrayishViolet: hsl(273, 4%, 51%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 0;
+}
+
+h1, h2 {
+    font-family: 'DM Serif Display', serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grayishBlue);
+}
+
+a:hover {
+  color: var(--veryDarkViolet);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2vh 5vh;
+    min-height: 10vh;
+}
+
+#hamburger {
+  margin: 0 0;
+  max-width: 52px;
+  max-height: 52px;
+}
+
+.off {
+  background-color: white;
+  border-style: none;
+  background-image: url(./images/icon-hamburger.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.on {
+  background-color: white;
+  border-style: none;
+  background-image: url(./images/icon-close.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  background-color: var(--veryDarkViolet);
+  background-image: url(./images/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 5vh 3vh;
+}
+
+.mobile-menu-off {
+  display: none;
+}
+
+.mobile-menu .nav-btn {
+  border-color: white;
+  color: white;
+  width: 100%;
+  height: 55px;
+  margin: 0 0;
+}
+
+.mobile-menu a {
+  color: white;
+  margin-bottom: 5vh;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.menu {
+    display: none;
+    margin: 0 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0 0;
+}
+
+li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-btn {
+  border: 2px solid var(--veryDarkViolet);
+  color: var(--veryDarkViolet);
+  height: 30px;
+  width: 130px;
+  font-size: 1rem;
+}
+
+.nav-btn:hover {
+  color: var(--veryLightGray);
+  background-color: var(--veryDarkViolet);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    line-height: 2.5rem;
+}
+
+.first {
+    background-color: var(--darkViolet);
+    display: flex;
+    flex-direction: column;
+    color: var(--veryLightGray);
+    min-height: 65vh;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8rem;
+    padding: 0 2vh;
+}
+
+button {
+  margin-top: 5vh;
+  border-style: solid;
+  border-color: var(--veryLightGray);
+  background-color: inherit;
+  color: var(--veryLightGray);
+  height: 52px;
+  width: 210px;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: var(--veryLightGray);
+  color: var(--darkViolet);
+}
+
+.intro-mobile {
+    margin-bottom: -7px;
+    min-width: 358px;
+    width: 100%;
+  }
+
+.intro-mobile-left {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 70vh;
+}
+
+.intro-mobile-right {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 120vh;
+}
+
+.intro-desktop-left {
+    position: absolute;
+    left: 0;
+    top: 250px;
+    z-index: 0;
+    display: none;
+}
+
+.intro-desktop-right {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 400px;
+    z-index: 0;
+    display: none;
+  }
+
+.second {
+    display: flex;
+    flex-direction: column;
+    padding: 15vh 5vh;
+    color: hsl(270, 9%, 17%);
+}
+
+.second div {
+    margin: 2vh 0vh;
+}
+
+.second p {
+    color: var(--darkGrayishViolet);
+}
+
+
+.third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkViolet);
+    color: var(--veryLightGray);
+    min-height: 45vh;
+    margin: 0vh 3vh;
+    margin-bottom: 20vh;
+    background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.how-we-mobile-bg {
+    position: absolute;
+    right: 2.6vh;
+}
+
+.footer {
+    background-color: var(--veryLightGray);
+    background-image: url(./images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.footer-logo {
+    margin-top: 10vh;
+    margin-bottom: 2.5vh;
+}
+
+.social-icons img {
+    margin: 2vh 1vh;
+}
+
+h3 {
+    color: var(--darkGrayishViolet);
+    margin: 5vh 0vh;
+}
+
+.footer p {
+  color: var(--veryDarkViolet);
+  font-weight: 600;
+}
+
+.desk-img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+.intro-mobile-left,
+.intro-mobile-right,
+.how-we-mobile-bg,
+.footer-mobile,
+#hamburger {
+  display: none;
+}
+
+button {
+  height: 42px;
+  font-size: 1rem;
+  margin: 0 0;
+}
+
+
+  body {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .desk-img {
+    display: block;
+    position: absolute;
+    right: 13vh;
+    top: 17vh;
+  }
+
+  .desk-img img {
+    height: auto;
+    width: 75%;
+  }
+
+  .nav {
+    align-items: center;
+    justify-content: center;
+    padding: 0vh 35vh;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-mobile {
+    display: none;
+  }
+
+  .first {
+    flex-direction: row;
+    padding: 0 35vh;
+    justify-content: space-between;
+    margin-bottom: 15vh;
+  }
+
+  .first-text {
+    max-width: 80vh;
+  }
+
+  .second {
+    margin: 15vh 0;
+    padding: 0 35vh;
+  }
+
+  .diff {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .third {
+    min-height: 20px;
+    max-height: 35vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12vh 10vh;
+    margin: 0 40vh;
+    margin-bottom: 15vh;
+    background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+.third h1 {
+  max-width: 60vh;
+  text-align: left;
+}
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 35vh;
+    background-image: url(./images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .intro-desktop-left {
+    display: block;
+    position: absolute;
+  }
+
+  .intro-desktop-right {
+    display: block;
+    position: absolute;
+  }
+
+}
